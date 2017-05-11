@@ -1,5 +1,6 @@
 # String_Array_Collection
 배열
+
 	1. 배열이란
 		1) 배열은 '같은 타입'의 여러 변수를 하나의 묶음으로 다루는 것
 		2) 배열은 인스턴스화(new)를 통해서 메모리에 올라간다.
@@ -13,6 +14,7 @@
 		2) 배열 생성 : 값을 저장할 수 있는 공간이 생성(메모리에 로드)
 		3) 타입[] 변수이름 = new 타입[길이];
 		4) 타입 변수이름[] = {데이터};
+
 	3. 배열의 길이와 인덱스
 		1) 인덱스
 			i. 배열의 요소마다 붙여진 일련번호(각 요소를 구별하는데 사용)
@@ -29,24 +31,28 @@
 				     int length = array.length;	array.length의 값은 5, length에 5가 저장
 				• 배열이름.length는 상수로 사용
 				• 값을 읽을 수만 있을뿐, 변경은 할 수 없음
+
 String
+
 	1. String 배열
 		1) 여러개의 문자열을 저장할 때 사용
 		2) 초기화는 특별한 값이 없을 경우 null을 입력해준다.
 		3) Null 값은 변수나 클래스가 값을 가지고 있지 않다는 뜻이다. - 메모리에는 올라가 있음
+
 	2. String 클래스
 		1) Char배열이 아닌  String 클래스를 이용해서 문자열을 처리하는 이유
 		-> String 클래스= char배열 + 기능
 		2) String 클래스의 주요 메서드
 		String name = "안녕하세요.";
-			i. // 글자 자르기
-			//	beginIndex~EndIndex까지의 글자 출력
-			// substring(beginIndex, endIndex)
-			String secondWord = name.substring(1,2);
-			System.out.println(secondWord);
 
-			ii. // 문자열 길이 출력
-			// 변수명이나 클래스명을 한글로는 가능하나 안쓰는 것이 좋음
+			i.  글자 자르기
+				beginIndex~EndIndex까지의 글자 출력
+				substring(beginIndex, endIndex)
+				String secondWord = name.substring(1,2);
+				System.out.println(secondWord);
+
+			ii.  문자열 길이 출력
+			 변수명이나 클래스명을 한글로는 가능하나 안쓰는 것이 좋음
 			int 문자열길이	= name.length();
 			System.out.println(문자열길이);
 
@@ -74,6 +80,7 @@ String
 			위와 같은 경우
 			" 0 안 1 녕 2 하 3 세 4 요 5 "으로 되어서
 			출력은  "녕" 이 출력된다.
+
 Collection & Generic
 	1. 컬렉션프레임워크
 		1) 컬렉션이란
