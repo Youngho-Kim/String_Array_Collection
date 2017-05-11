@@ -82,6 +82,7 @@ String
 			출력은  "녕" 이 출력된다.
 
 Collection & Generic
+
 	1. 컬렉션프레임워크
 		1) 컬렉션이란
 			i. 여러 객체(데이터를 모아 놓은 것
@@ -93,6 +94,7 @@ Collection & Generic
 		4) 컬렉션 클래스
 			i. 다수의 데이터를 저장할 수 있는 클래스
 			ii. Ex) ArrayList, HashMap….
+
 	2. 종류
 		1) List
 			i. 순서가 있는 데이터의 집합
@@ -113,6 +115,7 @@ Collection & Generic
 			i. Return 타입을 일관성있게 유지
 			ii. Casting 오류를 범하지 않도록 유도
 			iii. Collection의 Key 또는 값의 타입을 통일 시키기 위해
+
 	4. ArrayList
 		1) 내부적으로 값이 입력되면 값과 함께 순서가 저장된다.
 		2)  제네릭을 사용하지 않는 컬렉션은 입력되는 값을 Object로 Casting한다. 길이 출력
@@ -137,6 +140,7 @@ Collection & Generic
 				System.out.println(item);
 				// list.get : arraylist에 해당하는 값 가져오기
 			}
+
 	5. Map 계열
 		1) 키와 값으로 이루어진 데이터의 집합.
 		2) 순서대로 저장되지 않음
