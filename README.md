@@ -178,6 +178,7 @@ Collection & Generic
 
 3. 마크다운 문법
 
+
 3.1 마크다운 문법 설명 링크 모음
 
 	• 공식 사이트 문법 설명 (영문)
@@ -196,7 +197,10 @@ Collection & Generic
 
 	• PHP 마크다운 확장 번역 – Nolboo’s Blog
 
+
+
 3.2 마크다운 문법 간단 소개
+
 마크다운은 John Gruber가 처음에 마크다운 언어를 만든 이후 거의 바뀌지 않았다.
 그래서 사람들이 불편하게 생각하는 부분들을 보완한 여러가지 마크다운 언어가 만들어졌다. 대표적으로 가장 많이 쓰이는 것은 Markdown Extra와 Multimarkdown 그리고 Github Flavored Markdown 정도다.
 여기선 그런 파생문법은 제외하고 가장 기본적인 마크다운 문법을 아주 간단하게만 소개해보려 한다.
