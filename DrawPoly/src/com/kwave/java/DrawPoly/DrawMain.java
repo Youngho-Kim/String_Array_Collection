@@ -16,7 +16,8 @@ public class DrawMain {
 //		main.drawRect7("A", 5);	//7
 //		main.drawRect8("A", 5);	//8
 //		main.drawRect9("A", 5);	//9
-		main.drawRect10("A", 5);//10
+//		main.drawRect10("A", 5);//10
+		main.drawRect11("A", 5);//10
 		
 			
 	}
@@ -281,6 +282,7 @@ public class DrawMain {
 	//    A
 		
 	public void drawRect10(String mark, int count){
+		// 위 삼각형
 		for(int i=0;i<count;i++){
 			// 공백찍는 반복문
 			for(int j=0;j<(count-1)-i;j++){	// 공백은 전체 카운트에서 각 홀수를 뺀 값을 출력한다.
@@ -316,7 +318,7 @@ public class DrawMain {
 			}
 			System.out.println(" ");
 		}
-		
+		// 아래 삼각형
 		for(int i=1;i<count;i++){
 			// 공백찍는 반복문
 			for(int j=0;j<i;j++){	// 공백은 전체 카운트에서 각 홀수를 뺀 값을 출력한다.
@@ -330,4 +332,60 @@ public class DrawMain {
 			System.out.println(" ");
 		}
 	}
+	
+	
+	// 11. 입력받은 문자로 삼각형 만들기
+	//    A
+	//   A A
+	//  A   A
+	// A     A
+	//A       A
+	// A     A
+	//  A   A
+	//   A A
+	//    A
+		
+	public void drawRect11(String mark, int count){
+		// 위 삼각형
+		for(int i=0;i<count;i++){
+//			// 공백찍는 반복문
+//			for(int j=0;j<(count-1)-i;j++){	// 공백은 전체 카운트에서 각 홀수를 뺀 값을 출력한다.
+//					System.out.print(" ");
+//			}
+			// 마크찍는 반복문	
+			for(int k=0;k<=count*2;k++)	// 마크는 각 줄의 숫자만큼 출력한다.
+			{
+				if((k==(count-i))||(k==(count+i)))
+				{
+					System.out.print(mark);
+				}
+				else
+				{					
+					System.out.print(" ");
+				}
+			}
+			System.out.println(" ");
+		}
+		
+		// 아래 삼각형
+		for(int i=count;i>=0;i--){
+//			// 공백찍는 반복문
+//			for(int j=0;j<(count-1)-i;j++){	// 공백은 전체 카운트에서 각 홀수를 뺀 값을 출력한다.
+//					System.out.print(" ");
+//			}
+			// 마크찍는 반복문	
+			for(int k=0;k<=count*2;k++)	// 마크는 각 줄의 숫자만큼 출력한다.
+			{
+				if((k==(count-i))||(k==(count+i)))
+				{
+					System.out.print(mark);
+				}
+				else
+				{					
+					System.out.print(" ");
+				}
+			}
+			System.out.println(" ");
+		}
+	}	
 }
